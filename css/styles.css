@@ -1,0 +1,47 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 3rem 5%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+header > img {
+    display: block;
+    margin: 2rem auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+section {
+    display: flex;
+    margin: 2rem 0;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+}
