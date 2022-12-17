@@ -10,14 +10,9 @@ body {
     padding: 1rem 0;
     font-family: 'Arimo', sans-serif;
     background-color: #FCF9F3;
-    /* background-color: #F5F5F5; */
-    /* max-width: 1400px; */
 }
 
-/* header {
-    background: url("../images/nursery2.jpeg") no-repeat center center;
-} */
-
+/* Main Logo Header */
 header>img {
     display: block;
     margin: 1rem auto;
@@ -35,7 +30,6 @@ h1 {
 
 h2 {
     color: #26877F;
-    /* color: #018342; */
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 800;
     font-size: 2rem;
@@ -44,12 +38,12 @@ h2 {
 }
 
 p {
-    /* font-family: 'Arimo', sans-serif; */
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.5;
 }
 
+/* Links */
 a,
 a:link,
 a:visited {
@@ -64,30 +58,31 @@ a:active {
     text-decoration: underline;
 }
 
+/* Navigation */
 nav ul {
     display: flex;
     list-style: none;
     text-align: center;
     margin: 2rem 5%;
-    /* border-top: thin solid #b53333; */
-    /* padding-bottom: 0.5rem; */
-    /* border-bottom: thin solid #b53333; */
 }
 
 nav li {
-    /* display: inline-block; */
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
     flex: 1;
 }
 
+/* Main section with flexbox layout */
 section {
     display: flex;
-    flex-wrap: wrap;
     margin: 2rem 5%;
     gap: 2rem;
     justify-content: center;
+
+    /* Commented out to ensure there are 3 columns */
+    /* Uncomment to make responsive */
+    /* flex-wrap: wrap; */
 }
 
 article {
@@ -95,47 +90,58 @@ article {
 }
 
 /* Media query to stack content on smaller screens */
-@media screen and (max-width: 992px) {
+/* Commented out to ensure there are 3 columns */
+/* Uncomment to make responsive */
+/* @media screen and (max-width: 992px) {
     article {
         flex: 100%;
     }
-}
+} */
 
-article>img {
-    display: block;
-    margin: 0 auto 1rem auto;
-    width: 100%;
-    height: auto;
-    /* min-width: 350px; */
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
+/* Promotional banner with background image */
 .banner {
-    /* color: #fff; */
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/plants.jpeg") no-repeat center center;
-    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/plants.jpeg") no-repeat center center fixed; */
-    /* background-size: cover; */
     background-color: rgba(38, 135, 127, 0.5);
     border-radius: 10px;
     padding: 2rem;
 }
 
 .banner p {
-    color:#F8F3E7;
+    color: #F8F3E7;
 }
 
+/* Images with zoom effect */
+.image-zoom {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto 1rem auto;
+}
+
+.image-zoom img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    transition: transform .9s ease;
+}
+
+.image-zoom img:hover {
+    transform: scale(1.2);
+}
+
+/* Main section text styling */
 .cards p {
     color: #0d433e;
     margin-bottom: 0.5rem;
-}   
+}
 
 .cards a {
     font-size: 1.2rem;
     text-decoration: underline;
 }
 
+/* Footer with flexbox layout */
 footer {
     display: flex;
     border-top: 2px solid #D3D3D3;
@@ -145,7 +151,6 @@ footer {
 
 footer div {
     flex: 1;
-    /* padding: 0.5rem 0; */
 }
 
 footer img {
@@ -156,8 +161,6 @@ footer img {
 }
 
 .copyright {
-    /* border-top: thin solid #b53333; */
-    /* padding-top: 1.5rem; */
     text-align: right;
     color: #b53333;
 }
