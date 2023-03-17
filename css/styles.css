@@ -1,6 +1,7 @@
 *,
 ::before,
 ::after {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -79,10 +80,7 @@ section {
     margin: 2rem 5%;
     gap: 2rem;
     justify-content: center;
-
-    /* Commented out to ensure there are 3 columns */
-    /* Uncomment to make responsive */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 article {
@@ -90,13 +88,11 @@ article {
 }
 
 /* Media query to stack content on smaller screens */
-/* Commented out to ensure there are 3 columns */
-/* Uncomment to make responsive */
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     article {
         flex: 100%;
     }
-} */
+}
 
 /* Promotional banner with background image */
 .banner {
